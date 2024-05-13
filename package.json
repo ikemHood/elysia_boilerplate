@@ -1,0 +1,29 @@
+{
+  "name": "elysia_starter",
+  "module": "src/server.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "pretty": "prettier --write \"**/*.{ts,js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-types": "^1.1.8",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/jwt": "^1.0.2",
+    "elysia": "^1.0.18",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.3.4",
+    "nanoid": "^5.0.7",
+    "yoctocolors": "^2.0.0"
+  }
+}
