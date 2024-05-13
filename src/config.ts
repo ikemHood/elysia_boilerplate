@@ -17,6 +17,9 @@ export default {
     jwt: {
       secret: Bun.env.JWT_SECRET!,
       expiresIn: Bun.env.JWT_EXPIRES_IN!
+    },
+    cookie: {
+      expires: Number(Bun.env.COOKIES_EXPIRES_IN_DAYS!) * 60 * 60 * 24
     }
   },
   socials: {

@@ -1,13 +1,9 @@
-import { type Context } from "elysia";
+import { type Context } from 'elysia';
 
 export interface ContextWithJWT extends Context {
   jwt: {
-    readonly sign: (
-      morePayload: Record<string, string | number>
-    ) => Promise<string>;
-    readonly verify: (
-      jwt?: string | undefined
-    ) => Promise<false | Record<string, string | number>>;
+    readonly sign: (morePayload: Record<string, string | number>) => Promise<string>;
+    readonly verify: (jwt?: string | undefined) => Promise<false | Record<string, string | number>>;
   };
 }
 
@@ -25,4 +21,8 @@ export interface ErrorResponse<Code = string> {
 export interface SuccessResponse<Data> {
   message: string;
   data?: Data;
+}
+
+export interface LoggedInUser {
+  readonly id: string;
 }
