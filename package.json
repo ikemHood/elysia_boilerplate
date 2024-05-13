@@ -6,8 +6,8 @@
   "scripts": {
     "pretty": "prettier --write \"**/*.{ts,js}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts",
-    "start": "bun run src/index.ts"
+    "dev": "bun run --watch src/server.ts",
+    "start": "bun run src/server.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
